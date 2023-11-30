@@ -1,0 +1,7 @@
+body{
+  overflow: hidden;
+  background: #00583d;
+}
+.main{
+  box-shadow: rgba(0, 0, 0, 0.747) 0px 5px 15px;
+}
