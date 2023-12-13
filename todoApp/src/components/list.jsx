@@ -1,7 +1,8 @@
-import React, { useRef} from 'react';
+import React, { useRef, useState } from 'react';
 
 function List({ tasks }) {
-
+  
+  
   const para = useRef(null);
   const element = useRef(null)
 
@@ -13,11 +14,13 @@ function List({ tasks }) {
   }
 
   const deleteTask = ()=>{
-    let del = element.current
-    if(del){
-      del.remove()
+    for(var i=0;i<tasks.length;i++){
+      
+      const del = element.current
+      console.log(element[i])
     }
   }
+
   return (
     <>
       <div className='flex flex-col gap-10 text-white items-center font-semibold text-2xl'>
