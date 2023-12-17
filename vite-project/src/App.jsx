@@ -1,8 +1,8 @@
-import CurrencyMain from "./Projects/CurrencyProject/CurrencyMain"
+import SnakeLadder from "./Projects/SnakeLadder/SnakeLadder"
 import "./App.css"
 function App() {
  return(
-  <CurrencyMain/>
+  <SnakeLadder/>
  )
 }
 
