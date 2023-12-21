@@ -1,9 +1,8 @@
 import { useState } from 'react'
 
-
+const IMAGES = ['one.png', 'two.png', 'three.png', 'four.png', 'five.png', 'six.png']
 function RandomDice() {
   const [count, setCount] = useState(1)
-  const images = ['one.png', 'two.png', 'three.png', 'four.png', 'five.png', 'six.png']
   
   function generateRandomNumber () {
     setCount(Math.floor(Math.random() * 6) + 1)
