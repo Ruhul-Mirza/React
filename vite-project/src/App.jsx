@@ -1,9 +1,9 @@
 
-import Game from "./Projects/SnakeLadder/Game"
+import Recipe from "./Projects/RecipeCatalog/Recipe"
 import "./App.css"
 function App() {
  return(
-  <Game/>
+  <Recipe/>
  )
 }
 
