@@ -1,9 +1,9 @@
 
-import Recipe from "./Projects/RecipeCatalog/Recipe"
+import Movie from "./Projects/MovieData/Movie"
 import "./App.css"
 function App() {
  return(
-  <Recipe/>
+  <Movie/>
  )
 }
 
