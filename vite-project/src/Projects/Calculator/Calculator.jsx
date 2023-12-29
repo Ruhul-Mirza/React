@@ -7,7 +7,6 @@ function Calculator() {
     
       return (
         <>
-            <h1>Calculator</h1>
         <div className="container">
           <div className="calculator">
             <form action="">

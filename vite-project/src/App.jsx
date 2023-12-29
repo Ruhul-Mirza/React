@@ -1,8 +1,8 @@
-import Game from "./Projects/SnakeLadder/Game"
+import Calculator from "./Projects/Calculator/Calculator"
 import "./App.css"
 function App() {
  return(
-  <Game/>
+  <Calculator/>
  )
 }
 
