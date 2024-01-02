@@ -17,7 +17,21 @@
   height: 32px;
   font-weight: normal;
 }
-
+.bg-facebook,.bg-facebook:hover {
+  background-color: #5d82d1 !important;
+  color: #fff !important;
+  border: none !important;
+}
+.bg-instagram,.bg-instagram:hover {
+  background: #c22b72 !important;
+  color: #fff !important;
+  border: none !important;
+}
+.bg-whatsapp,.bg-whatsapp:hover{
+    background: #25D366 !important;
+    color: #fff !important;
+    border: none !important;
+}
 .navbar .dropdown-toggle::after {
   border: none;
   content: "\f107";
@@ -29,7 +43,7 @@
 
 .navbar-light .navbar-nav .nav-link {
   margin-right: 30px;
-  padding: 25px 0;
+  padding: 10px 0;
   color: #ffffff;
   font-size: 15px;
   font-weight: 500;

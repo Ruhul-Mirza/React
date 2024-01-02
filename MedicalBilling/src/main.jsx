@@ -7,6 +7,7 @@ import { Contact } from './components/Contact/Contact.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "../src/Custom.scss"
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<App/>}>

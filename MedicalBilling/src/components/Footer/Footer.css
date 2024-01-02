@@ -1,3 +1,9 @@
+.footer,.footer p{
+    color: #213a62;
+}
 .footer a:hover{
     text-decoration: underline;
+}
+.whatsapp{
+    color: #6aa53b;
 }

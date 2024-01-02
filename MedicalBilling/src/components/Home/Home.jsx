@@ -1,8 +1,8 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import "aos/dist/aos.css";
-import AOS from 'aos'; 
-import istockphoto from "../images/istockphoto.jpg"
-import why from "../images/why.jpg"
+import AOS from "aos";
+import istockphoto from "../images/istockphoto.jpg";
+import why from "../images/why.jpg";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ServiceWhoWeService } from "../Services/Services";
@@ -21,17 +21,11 @@ import { NavLink } from "react-router-dom";
 import { AboutWhoWeAre, AboutWhyChooseUs } from "../About/About";
 
 function Home() {
-
-
   useEffect(() => {
     AOS.init({
       offset: 120,
     });
-
-    
   }, []);
-
- 
 
   return (
     <div className="main">
@@ -43,16 +37,14 @@ function Home() {
       >
         <img src={why} alt="" />
         <div className="container">
-          <h1>AMCK Knowledge Solutions</h1>
+          <h1 className="text-primary">AMCK Knowledge Solutions</h1>
           <div className="hero-button">
-            
-              <NavLink to='/about'
-                type="button"
-                className="btn btn-outline-primary btn-lg mt-3"
-              >
-                Know More
-              </NavLink>
-            
+            <NavLink
+              to="/about"
+              className="btn font-bold km btn-primary text-white btn-lg mt-3"
+            >
+              Know More
+            </NavLink>
           </div>
         </div>
       </header>
@@ -69,7 +61,7 @@ function Home() {
               >
                 <FontAwesomeIcon
                   icon={faFileAlt}
-                  className="fa-4x text-center my-4"
+                  className="fa-4x text-center my-4 icon-color"
                 ></FontAwesomeIcon>
                 <div className="card-body">
                   <h5 className="card-title service-title fw-bold fs-4">
@@ -94,7 +86,7 @@ function Home() {
               >
                 <FontAwesomeIcon
                   icon={faIdCard}
-                  className="fa-4x text-center my-4"
+                  className="fa-4x text-center my-4 icon-color"
                 ></FontAwesomeIcon>
                 <div className="card-body">
                   <h5 className="card-title service-title fw-bold fs-4">
@@ -119,11 +111,11 @@ function Home() {
               >
                 <FontAwesomeIcon
                   icon={faMoneyCheckAlt}
-                  className="fa-4x text-center my-4"
+                  className="fa-4x text-center my-4 icon-color"
                 ></FontAwesomeIcon>
                 <div className="card-body">
                   <h5 className="card-title service-title fw-bold fs-4">
-                    Patient Financial Services:{" "}
+                    Patient Financial Services:
                   </h5>
                   <p className="card-text">
                     Patient statement, Following up on patients with high
@@ -135,13 +127,13 @@ function Home() {
             </div>
           </div>
 
-          <AboutWhoWeAre/>
+          <AboutWhoWeAre />
         </div>
       </div>
 
-      <ServiceWhoWeService/>
+      <ServiceWhoWeService />
 
-      <AboutWhyChooseUs/>
+      <AboutWhyChooseUs />
     </div>
   );
 }

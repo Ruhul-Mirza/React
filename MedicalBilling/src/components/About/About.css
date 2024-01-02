@@ -14,11 +14,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(30, 144, 255, 0.5); /* Dodger Blue with 50% opacity */
+    background-color: rgba(30, 144, 255, 0.5); 
 }
 /* Why choose us */
 .why-us h2 {
     position: relative;
+    color: #213a62;
     margin-bottom: 35px;
   }
   .why-us h2::after {
@@ -26,7 +27,7 @@
     width: 120px;
     height: 3px;
     display: inline-block;
-    background: dodgerblue;
+    background: #213a62;
     position: absolute;
     left: 0px;
     right: 0px;
@@ -40,8 +41,8 @@
     transition: 0.5s;
     position: relative;
   
-    background: rgba(30, 143, 255, 0.171);
-  
+    /* background: rgba(30, 143, 255, 0.171); */
+    background: #213a62;
     height: 250px;
     overflow: hidden;
     margin-bottom: 30px;
@@ -68,7 +69,7 @@
     display: block;
     font-size: 56px;
     font-weight: 700;
-    color: dodgerblue;
+    color: #14233a;
     position: absolute;
     right: 10px;
     top: 0px;
@@ -79,11 +80,11 @@
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: dodgerblue;
+  color: white;
   text-decoration: none;
   }
   .why-us .box p {
-  color: #3498db;
+  color: white;
   font-size: 15px;
   margin: 0;
   padding: 0;

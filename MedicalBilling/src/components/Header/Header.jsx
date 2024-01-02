@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faFacebookSquare,
+    faFacebookF,
     faWhatsapp, faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../images/Logo.png"
@@ -23,19 +23,19 @@ function Header(){
         <div className="row gx-0 d-none d-lg-flex">
             <div className="col-lg-7 px-5 text-start">
                 <div className="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <FontAwesomeIcon icon={faMapMarkerAlt}><small></small></FontAwesomeIcon>
-                    <small className="mx-2">1312 17TH STREET UNIT 2229, DENVER, COLORADO- 80202</small>
+                    <FontAwesomeIcon icon={faMapMarkerAlt}  style={{color:"#6aa53b"}} ></FontAwesomeIcon>
+                    <small className="mx-2 text-primary" >1312 17TH STREET UNIT 2229, DENVER, COLORADO - 80202</small>
                 </div>
             </div>
             <div className="col-lg-5 px-5 text-end">
                 <div className="h-100 d-inline-flex align-items-center py-3 me-4">
                     <FontAwesomeIcon icon={faPhone}><small className="fa fa-phone-alt text-primary"></small></FontAwesomeIcon>
-                    <small className="mx-2">+91 929-438-2944</small>
+                    <small className="mx-2 text-primary">+91 929-438-2944</small>
                 </div>
                 <div className="h-100 d-inline-flex align-items-center">
-                    <a className="btn btn-sm-square text-primary me-1" href=""><FontAwesomeIcon icon={faFacebookSquare} className="fab fa-facebook-f"></FontAwesomeIcon></a>
-                    <a className="btn btn-sm-square text-primary me-1" href=""><FontAwesomeIcon icon={faWhatsapp} className="fab fa-whatsapp"></FontAwesomeIcon></a>
-                    <a className="btn btn-sm-square text-primary me-1" href=""><FontAwesomeIcon icon={faInstagram} className="fab fa-instagram"></FontAwesomeIcon></a>
+                    <a className="btn btn-sm bg-facebook px-2 mx-1" href=""><FontAwesomeIcon icon={faFacebookF} className="fab fa-facebook-f"></FontAwesomeIcon></a>
+                    <a className="btn btn-sm bg-whatsapp px-2 mx-1" href=""><FontAwesomeIcon icon={faWhatsapp} className="fab fa-whatsapp"></FontAwesomeIcon></a>
+                    <a className="btn btn-sm bg-instagram px-2 mx-1" href=""><FontAwesomeIcon icon={faInstagram} className="fab fa-instagram"></FontAwesomeIcon></a>
                 </div>
             </div>
         </div>
@@ -50,10 +50,10 @@ function Header(){
         </button>
         <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`}>
             <div className="navbar-nav ms-auto p-4 p-lg-0">
-                <NavLink to='/' className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary':'text-secondary'}`}>Home</NavLink>
-                <NavLink to="/about" className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary':'text-secondary'}`}>About</NavLink>
-                <NavLink to="/services" className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary':'text-secondary'}`}>Services</NavLink>
-                <NavLink to="/contact" className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary':'text-secondary'}`}>Contact</NavLink>
+                <NavLink to='/' className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary border-bottom border-primary':'text-secondary border-none'}`}>Home</NavLink>
+                <NavLink to="/about" className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary border-bottom border-primary':'text-secondary border-none'}`}>About</NavLink>
+                <NavLink to="/services" className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary border-bottom border-primary':'text-secondary border-none'}`}>Services</NavLink>
+                <NavLink to="/contact" className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary border-bottom border-primary':'text-secondary border-none'}`}>Contact</NavLink>
             </div>
         </div>
     </nav>

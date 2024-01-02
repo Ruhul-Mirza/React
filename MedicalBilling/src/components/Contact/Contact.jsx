@@ -13,6 +13,7 @@ import {
   faEnvelope,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
+
 export const Contact = () => {
   return (
     <div className="main">
@@ -42,7 +43,7 @@ export const ContactHero = () => {
 
 export const ContactInfo = () => {
   return (
-    <section className="pt-4 pt-md-5">
+    <section className="pt-4 pt-md-5 text-primary">
       <div className="container">
         <div
           className="row mb-4"
@@ -161,7 +162,7 @@ export const ContactInfo = () => {
 
 export const ContactForm = () => {
   return (
-    <div className="container">
+    <div className="container text-primary">
   <div className="row g-4 g-lg-5 align-items-center my-5">
     <div className="col-lg-6 text-center mb-5">
       <img

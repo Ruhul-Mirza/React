@@ -1,11 +1,13 @@
 import Logo from "../images/Logo.png"
 import { NavLink } from "react-router-dom";
 import "./Footer.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 function Footer(){
     return(
         <div className="main">
 
-        <footer className="pt-lg-8 pt-5 border-top footer bg-white" data-aos="fade-up-left" data-aos-once="true" data-aos-duration="2000">
+        <footer className="pt-lg-8 pt-5 border-top border-primary footer bg-white" data-aos="fade-up-left" data-aos-once="true" data-aos-duration="2000">
         <div className="container mt-lg-2">
             <div className="row">
                 <div className="col-lg-4 col-md-6 col-12">
@@ -13,12 +15,12 @@ function Footer(){
                     <div className="mb-4">
                         <img src={Logo} width="100" height="100" alt="Geeks" className="logo-inverse"/>
                         <div className="mt-4">
-                            <p>Empowering Healthcare Excellence through Precise Billing Solutions</p>
+                            <p className="text-primary">Empowering Healthcare Excellence through Precise Billing Solutions</p>
                             
                             <div className="fs-4 mt-4">
                                 
                                 <a href="#" className="me-2">
-                                    <i className="fab fa-whatsapp"></i>
+                                    <FontAwesomeIcon icon={faWhatsapp} className="whatsapp"></FontAwesomeIcon>
                                 </a>
                             </div>
                         </div>
@@ -52,11 +54,11 @@ function Footer(){
                         <p>1312 17TH STREET UNIT 2229, DENVER, COLORADO-80202</p>
                         <p className="mb-1">
                             Email:
-                            <a href="#">abbasamck@gmail.com</a>
+                            <a href="#"> abbasamck@gmail.com</a>
                         </p>
                         <p>
                             Phone:
-                            <span className="text-dark fw-semibold">(+91) 929-438-2944</span>
+                            <span className="fw-semibold">(+91) 929-438-2944</span>
                         </p>
                     </div>
                 </div>
@@ -66,11 +68,6 @@ function Footer(){
                 <div className="col-lg-4 col-md-5 col-12">
                     <span>
                         ©
-                        <span id="copyright2">
-                            <script>
-                                document.getElementById("copyright2").appendChild(document.createTextNode(new Date().getFullYear()));
-                            </script>
-                        </span>
                         AMCK Knowledge Solutions.
                     </span>
                 </div>

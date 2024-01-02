@@ -22,7 +22,7 @@ export const Services = ()=>{
 export const ServiceHero = ()=>{
     return(
     <section className="top" data-aos="fade-up" data-aos-once="false" data-aos-duration="1300">
-        <div className="overlay"></div>
+        <div className="overlayservices"></div>
         <div className="container">
             <h1 className="display-4 fw-bold">Services</h1>
         </div>
@@ -35,8 +35,8 @@ export const ServiceWhoWeService = ()=>{
     return(
         <div className="services pb-2">
             <div id="serviceshead" className="text-center pt-5 pb-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-duration="2000">
-                <h1 className="fs-1 mb-3 fw-semibold">Our Services</h1>
-                <p className="lead fs-6 mt-5 mb-3 fw-semibold">AMCK Knowledge Solutions has ability to deal with any speciality. Our professionals are expert in multi-specialities.</p>
+                <h1 className="fs-1 mb-3 fw-semibold text-white">Our Services</h1>
+                <p className="lead fs-6 mt-5 mb-3 fw-semibold text-white">AMCK Knowledge Solutions has ability to deal with any speciality. Our professionals are expert in multi-specialities.</p>
             </div>
     
             <div className="container my-5">

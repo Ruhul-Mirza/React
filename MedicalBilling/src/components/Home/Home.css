@@ -25,34 +25,35 @@ html{
   
   .hero h1 {
     font-size: 3.5rem;
-    color:dodgerblue;
   }
   
-  
-  .hero-button a {
-    color: #fff;
-  }
-  
+ 
   /* card */
   .cards{
   box-shadow: rgba(0, 0, 0, 0.19) 0px -10px 20px, rgba(0, 0, 0, 0.23) 0px -6px 6px;
   
   }
   .card{
-  color: dodgerblue;
+  
   border-radius: 10px;
   border: none;
-  box-shadow: 0 1px 5px gray;
+  box-shadow: 0 1px 5px #213a62;
   text-align: center;
   transition: transform 0.2s;
   cursor: pointer;
   }
   .startcards:hover{
   transform: scale(1.02);
-  background: dodgerblue;
+  background: #213a62;
   color: white;
   }
-  
+  .card .icon-color,.card h5,.card-title{
+    color: #213a62;
+  }
+  .card:hover .icon-color,.card:hover .card-body h5{
+    color: #fff;
+  }
+
   /* whoweare */
   .whoweare{
   border-radius: 10px;
