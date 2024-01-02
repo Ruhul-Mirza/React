@@ -4,7 +4,8 @@ import {
     faFacebookSquare,
     faWhatsapp, faInstagram
 } from "@fortawesome/free-brands-svg-icons";
-import Logo from "./images/Logo.png"
+import Logo from "../images/Logo.png"
+import {Link,NavLink} from 'react-router-dom'
 import "./Header.css"
 import { faMapMarkerAlt,faPhone } from '@fortawesome/free-solid-svg-icons';
 function Header(){
@@ -41,20 +42,18 @@ function Header(){
     </div>
 
     <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
-        <a href="home.html" className="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <Link to="/" className="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src={Logo} alt="AMCK"/>
-        </a>
+        </Link>
         <button type="button" onClick={toggleMenu} className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span className="navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`}>
             <div className="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="home.html" className="nav-item nav-link active">Home</a>
-                <a href="about.html" className="nav-item nav-link">About</a>
-                <div className="nav-item dropdown">
-                    <a href="services.html" className="nav-link">Services</a>
-                </div>
-                <a href="contact.html" className="nav-item nav-link">Contact</a>
+                <NavLink to='/' className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary':'text-secondary'}`}>Home</NavLink>
+                <NavLink to="/about" className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary':'text-secondary'}`}>About</NavLink>
+                <NavLink to="/services" className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary':'text-secondary'}`}>Services</NavLink>
+                <NavLink to="/contact" className={({isActive}) => `nav-item nav-link  ${isActive ? 'text-primary':'text-secondary'}`}>Contact</NavLink>
             </div>
         </div>
     </nav>

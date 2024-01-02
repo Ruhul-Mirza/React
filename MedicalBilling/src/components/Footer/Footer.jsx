@@ -1,4 +1,5 @@
-import Logo from "./images/Logo.png"
+import Logo from "../images/Logo.png"
+import { NavLink } from "react-router-dom";
 import "./Footer.css"
 function Footer(){
     return(
@@ -28,9 +29,9 @@ function Footer(){
 
                         <h3 className="fw-bold mb-3">Services</h3>
                         <ul className="list-unstyled nav nav-footer flex-column nav-x-0">
-                            <li><a href="services.html" className="nav-link">Medical Billing & Coding</a></li>
-                            <li><a href="services.html" className="nav-link">Prior Authorization Services</a></li>
-                            <li><a href="services.html" className="nav-link">Patient Financial Services</a></li>
+                            <li><NavLink to="/services" className="nav-link">Medical Billing & Coding</NavLink></li>
+                            <li><NavLink to="/services" className="nav-link">Prior Authorization Services</NavLink></li>
+                            <li><NavLink to="/services" className="nav-link">Patient Financial Services</NavLink></li>
                         </ul>
                     </div>
                 </div>
@@ -39,8 +40,8 @@ function Footer(){
                         
                         <h3 className="fw-bold mb-3">About</h3>
                         <ul className="list-unstyled nav nav-footer flex-column nav-x-0">
-                            <li><a href="about.html" className="nav-link">About Us</a></li>
-                            <li><a href="about.html" className="nav-link">Why Choose Us</a></li>
+                            <li><NavLink to="/about" className="nav-link">About Us</NavLink></li>
+                            <li><NavLink to="/about" className="nav-link">Why Choose Us</NavLink></li>
                         </ul>
                     </div>
                 </div>
