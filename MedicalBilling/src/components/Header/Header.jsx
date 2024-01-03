@@ -34,7 +34,7 @@ function Header(){
                 </div>
                 <div className="h-100 d-inline-flex align-items-center">
                     <a className="btn btn-sm bg-facebook px-2 mx-1" href=""><FontAwesomeIcon icon={faFacebookF} className="fab fa-facebook-f"></FontAwesomeIcon></a>
-                    <a className="btn btn-sm bg-whatsapp px-2 mx-1" href=""><FontAwesomeIcon icon={faWhatsapp} className="fab fa-whatsapp"></FontAwesomeIcon></a>
+                    <a className="btn btn-sm bg-whatsapp px-2 mx-1" href="https://api.whatsapp.com/send/?phone=9294382944&text&type=phone_number&app_absent=0"><FontAwesomeIcon icon={faWhatsapp} className="fab fa-whatsapp"></FontAwesomeIcon></a>
                     <a className="btn btn-sm bg-instagram px-2 mx-1" href=""><FontAwesomeIcon icon={faInstagram} className="fab fa-instagram"></FontAwesomeIcon></a>
                 </div>
             </div>

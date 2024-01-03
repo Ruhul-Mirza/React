@@ -146,7 +146,7 @@ export const ContactInfo = () => {
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a className="btn btn-sm bg-whatsapp px-2 mb-0" href="#">
+                  <a className="btn btn-sm bg-whatsapp px-2 mb-0" href="https://api.whatsapp.com/send/?phone=9294382944&text&type=phone_number&app_absent=0">
                     <FontAwesomeIcon
                       icon={faWhatsapp}
                       className="fab fa-fw fa-whatsapp"

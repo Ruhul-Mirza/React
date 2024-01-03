@@ -1,5 +1,5 @@
 import Logo from "../images/Logo.png"
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Footer.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -19,7 +19,7 @@ function Footer(){
                             
                             <div className="fs-4 mt-4">
                                 
-                                <a href="#" className="me-2">
+                                <a href="https://api.whatsapp.com/send/?phone=9294382944&text&type=phone_number&app_absent=0" className="me-2">
                                     <FontAwesomeIcon icon={faWhatsapp} className="whatsapp"></FontAwesomeIcon>
                                 </a>
                             </div>
