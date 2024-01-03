@@ -1,4 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRef } from "react";
+import emailjs from 'emailjs-com';
 import {
   faWhatsapp,
   faInstagram,
@@ -161,6 +163,44 @@ export const ContactInfo = () => {
 };
 
 export const ContactForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      emailjs.sendForm('service_s4e80ae', 'template_p2ejbfe', form.current, '81iLZzkeP-TpmZjFe')
+        .then((result) => {
+          console.log(result.text);
+          form.current.reset();
+        })
+        .catch((error) => {
+          console.log(error.text);
+        });
+    } else {
+      console.log('Form validation failed');
+    }
+  };
+
+  const validateForm = () => {
+    const name = form.current['user_name'].value;
+    const email = form.current['user_email'].value;
+    const mobileNumber = form.current['user_mobileNumber'].value;
+    const message = form.current['message'].value;
+
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!name || !email || !mobileNumber || !message) {
+      alert('All fields are required');
+      return false;
+    } else if (!emailRegex.test(email)) {
+      alert('Invalid email');
+      return false;
+    }
+
+    return true;
+  };
   return (
     <div className="container text-primary">
   <div className="row g-4 g-lg-5 align-items-center my-5">
@@ -187,38 +227,38 @@ export const ContactForm = () => {
         </div>
 
         <div className="card-body p-0 mt-4">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="row g-3">
               <div className="col-md-6">
                 <label className="form-label fw-semibold d-block">
                   Your name *
                 </label>
-                <input type="text" className="form-control" />
+                <input type="text" className="form-control" name="user_name"/>
               </div>
 
               <div className="col-md-6">
                 <label className="form-label fw-semibold d-block">
                   Email address *
                 </label>
-                <input type="email" className="form-control" />
+                <input type="email" className="form-control"  name="user_email"/>
               </div>
 
               <div className="col-12">
                 <label className="form-label fw-semibold d-block">
                   Mobile number *
                 </label>
-                <input type="text" className="form-control" />
+                <input type="text" className="form-control" name="user_mobileNumber"/>
               </div>
 
               <div className="col-12">
                 <label className="form-label fw-semibold d-block">
                   Message *
                 </label>
-                <textarea className="form-control" rows="3"></textarea>
+                <textarea className="form-control" rows="3" name="message"></textarea>
               </div>
 
               <div className="col-12">
-                <button className="btn btn-outline-primary mb-0" type="button">
+                <button className="btn btn-outline-primary mb-0" type="submit" value="Send">
                   Send Message
                 </button>
               </div>
