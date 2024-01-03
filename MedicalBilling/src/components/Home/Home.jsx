@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "aos/dist/aos.css";
-import AOS from "aos";
-import istockphoto from "../images/istockphoto.jpg";
 import why from "../images/why.jpg";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,23 +6,12 @@ import { ServiceWhoWeService } from "../Services/Services";
 import {
   faFileAlt,
   faMoneyCheckAlt,
-  faIdCard,
-  faChartBar,
-  faCode,
-  faShield,
-  faDollarSign,
-  faPhone,
-  faClipboard,
+  faIdCard
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import { AboutWhoWeAre, AboutWhyChooseUs } from "../About/About";
 
 function Home() {
-  useEffect(() => {
-    AOS.init({
-      offset: 120,
-    });
-  }, []);
 
   return (
     <div className="main">

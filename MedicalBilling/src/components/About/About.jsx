@@ -3,12 +3,15 @@ import "./About.css"
 import istockphoto from "../images/istockphoto.jpg"
 export const AboutHero = () => {
     return(
-        <section className="top" data-aos="fade-up" data-aos-once="false" data-aos-duration="1300">
+        <div className="main">
+             <section className="top" data-aos="fade-up" data-aos-once="false" data-aos-duration="1300">
                 <div className="overlay"></div>
                 <div className="container">
                     <h1 className="display-4 fw-bold">About Us</h1>
                 </div>
             </section>
+        </div>
+       
     )
 }
 
@@ -104,7 +107,7 @@ export const AboutWhyChooseUs = () => {
 }
 
 
-export const About = () => {
+export function About (){
     return (
         <div className="main">
             <AboutHero />

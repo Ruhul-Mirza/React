@@ -42,7 +42,7 @@ function Header(){
     </div>
 
     <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
-        <Link to="/" className="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <Link to="#" className="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src={Logo} alt="AMCK"/>
         </Link>
         <button type="button" onClick={toggleMenu} className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

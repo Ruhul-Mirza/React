@@ -204,7 +204,7 @@ export const ContactForm = () => {
   return (
     <div className="container text-primary">
   <div className="row g-4 g-lg-5 align-items-center my-5">
-    <div className="col-lg-6 text-center mb-5">
+    <div className="col-lg-6 text-center mb-5" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
       <img
         src={istockphoto}
         className="d-block mx-lg-auto img-fluid"
@@ -213,7 +213,7 @@ export const ContactForm = () => {
       />
     </div>
 
-    <div className="col-lg-6">
+    <div className="col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
       <div
         className="card bg-white p-4"
         style={{
@@ -227,7 +227,7 @@ export const ContactForm = () => {
         </div>
 
         <div className="card-body p-0 mt-4">
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} onSubmit={sendEmail} >
             <div className="row g-3">
               <div className="col-md-6">
                 <label className="form-label fw-semibold d-block">

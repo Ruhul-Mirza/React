@@ -10,7 +10,7 @@ import {
   faClipboard,
 } from "@fortawesome/free-solid-svg-icons";
 
-export const Services = ()=>{
+export const Services =()=>{
     return(
         <div className="main">
             <ServiceHero/>
