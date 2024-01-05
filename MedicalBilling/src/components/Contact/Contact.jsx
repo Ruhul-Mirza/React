@@ -187,20 +187,28 @@ export const ContactForm = () => {
     const email = form.current['user_email'].value;
     const mobileNumber = form.current['user_mobileNumber'].value;
     const message = form.current['message'].value;
-
-    
+  
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
+    const numberRegex = /^\d+$/;
+  
     if (!name || !email || !mobileNumber || !message) {
       alert('All fields are required');
       return false;
     } else if (!emailRegex.test(email)) {
       alert('Invalid email');
       return false;
+    } else if (!numberRegex.test(mobileNumber)) {
+      alert('Mobile number should only contain numbers');
+      return false;
+    } else if (/\d/.test(name)) {
+      alert('Name cannot contain numbers');
+      return false;
     }
-
+  
     return true;
   };
+  
+
   return (
     <div className="container text-primary">
   <div className="row g-4 g-lg-5 align-items-center my-5">

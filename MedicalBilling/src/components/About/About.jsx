@@ -1,6 +1,7 @@
 import React from "react"
 import "./About.css"
 import istockphoto from "../images/istockphoto.jpg"
+import { NavLink } from "react-router-dom"
 export const AboutHero = () => {
     return(
         <div className="main">
@@ -24,10 +25,10 @@ export const AboutWhoWeAre = () => {
                     </div>
                     <div className="col-12 col-lg-6 order-lg-1 text-center" data-aos="fade-left" data-aos-duration="1200" data-aos-once="false">
                         <h1 className="display-5 lh-1 mb-3 text-primary">About Us</h1>
-                        <h1 className="fs-4 fw-bold mb-3" style={{ color: "#6aa53b" }}>Our Pride Is Quality Medical Billing, Dental Billing And Accounting Services</h1>
-                        <p className="lead fs-6 text-primary">At CapitalMed Solutions, we provide tailored end-to-end Revenue Cycle Management (RCM) solutions for the healthcare industry. Our comprehensive services include medical and dental billing, coding, credentialing, bookkeeping, patient helpdesk, scribing and more. With a deep understanding of healthcare intricacies, our experienced team maximizes revenue and streamlines operations. We cater to practices of all sizes, offering transparent, accurate, and timely support. CapitalMed Solutions is a trusted partner to many organizations across the nation. Get in touch with us today to learn more.At CapitalMed Solutions, we provide tailored end-to-end Revenue Cycle Management (RCM) solutions for the healthcare industry. Our comprehensive services include medical and dental billing, coding, credentialing, bookkeeping, patient helpdesk, scribing and more. With a deep understanding of healthcare intricacies, our experienced team maximizes revenue and streamlines operations. We cater to practices of all sizes, offering transparent, accurate, and timely support. CapitalMed Solutions is a trusted partner to many organizations across the nation. Get in touch with us today to learn more.</p>
+                        <h1 className="fs-4 fw-bold mb-3" style={{ color: "#6aa53b" }}>: Our Pride: Our Pride Is Quality Medical Billing, Dental Billing, Prior Authorization, RCM Services, Scribing Services, Credentialing Services</h1>
+                        <p className="lead fs-6 text-primary">At AMCK Knowledge Solutions, we provide end-to-end Revenue Cycle Management (RCM) solutions for the healthcare industry. Our comprehensive services include medical and dental billing, coding, credentialing, patient helpdesk, scribing and more. With a deep understanding of healthcare intricacies, our experienced team maximizes revenue and streamlines operations. We cater to practices of all sizes, offering transparent, accurate, and timely support. AMCK Knowledge Solutions is a trusted partner to many organizations across the nation. Get in touch with us today to learn more.</p>
                         <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <a href="/contact.html" className="mx-auto"><button type="button" className="btn btn-outline-primary px-4">Know More</button></a>
+                            <NavLink to="/about" className="mx-auto"><button type="button" className="btn btn-outline-primary px-4">Know More</button></NavLink>
                         </div>
                     </div>
                 </div>
@@ -42,7 +43,7 @@ export const AboutWhyChooseUs = () => {
             <div className="row">
                 <div className="col-md-8 offset-md-2" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-duration="2000">
                     <h2 className="mt-5 text-center">Why Choose Us</h2>
-                    <p className="mb-5 text-center">Why choose us section design HTML is created by using Bootstrap and custom HTML CSS. This our services section cards are more beautiful with pure CSS hover effects.</p>
+                    <p className="mb-5 text-center">At AMCK Knowledge Solutions, we offer tailored solutions to streamline your revenue cycle management. Our team of experts ensures meticulous coding, rapid claims processing, and compliance adherence. Experience enhanced cash flow and reduced administrative burden with our specialized medical billing services.</p>
                 </div>
             </div>
 
