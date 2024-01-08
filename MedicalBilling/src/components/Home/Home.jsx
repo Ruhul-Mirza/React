@@ -24,7 +24,7 @@ function Home() {
         <img src={why} alt="" />
         <div className="container">
           <h1 className="text-primary">AMCK</h1>
-          <span>Knowledge Solutions</span>
+          <span className="text-primary">Knowledge Solutions</span>
           <div className="hero-button">
             <NavLink
               to="/about"

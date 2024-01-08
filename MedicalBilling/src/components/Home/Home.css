@@ -24,11 +24,13 @@ html{
   }
   
   .hero h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: bolder;
+    font-style: italic;
   }
   .hero span{
     font-size: 2rem;
+    font-weight: 700;
   }
  
   /* card */
