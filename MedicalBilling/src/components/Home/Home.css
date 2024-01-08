@@ -25,9 +25,11 @@ html{
   
   .hero h1 {
     font-size: 3.5rem;
-    font-style: italic;
+    font-weight: bold;
   }
-  
+  .hero span{
+    font-size: 2rem;
+  }
  
   /* card */
   .cards{

@@ -25,7 +25,7 @@ export const AboutWhoWeAre = () => {
                     </div>
                     <div className="col-12 col-lg-6 order-lg-1 text-center" data-aos="fade-left" data-aos-duration="1200" data-aos-once="false">
                         <h1 className="display-5 lh-1 mb-3 text-primary">About Us</h1>
-                        <h1 className="fs-4 fw-bold mb-3" style={{ color: "#6aa53b" }}>: Our Pride: Our Pride Is Quality Medical Billing, Dental Billing, Prior Authorization, RCM Services, Scribing Services, Credentialing Services</h1>
+                        <h1 className="fs-4 fw-bold mb-3" style={{ color: "#6aa53b" }}>Our Pride: Our Pride Is Quality Medical Billing, Dental Billing, Prior Authorization, RCM Services, Scribing Services, Credentialing Services</h1>
                         <p className="lead fs-6 text-primary">At AMCK Knowledge Solutions, we provide end-to-end Revenue Cycle Management (RCM) solutions for the healthcare industry. Our comprehensive services include medical and dental billing, coding, credentialing, patient helpdesk, scribing and more. With a deep understanding of healthcare intricacies, our experienced team maximizes revenue and streamlines operations. We cater to practices of all sizes, offering transparent, accurate, and timely support. AMCK Knowledge Solutions is a trusted partner to many organizations across the nation. Get in touch with us today to learn more.</p>
                         <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                             <NavLink to="/about" className="mx-auto"><button type="button" className="btn btn-outline-primary px-4">Know More</button></NavLink>

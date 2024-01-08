@@ -31,8 +31,9 @@ export default function Board({ dice, isGameActive }) {
   }, [isGameActive]);
 
   useEffect(() => {
-    if (dice && isGameActive === true) {
-      setPosition(position + dice);
+    if (!!isGameActive) {
+      const targetPosition = Math.floor(position + dice, 36);
+      if (targetPosition <= 36) setPosition(targetPosition);
     }
   }, [dice]);
 
@@ -43,9 +44,7 @@ export default function Board({ dice, isGameActive }) {
         window.location.reload();
       }, 1000);
     }
-    if (position > 36) {
-      setPosition((prevposition) => prevposition - dice);
-    }
+
     if (SNAKES[position]) {
       setPosition(SNAKES[position]);
       alert(
